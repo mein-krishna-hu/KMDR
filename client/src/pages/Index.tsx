@@ -437,6 +437,22 @@ const Index: React.FC = () => {
         {renderTabContent()}
       </div>
 
+      {/* Bolt Hackathon Badge */}
+      <div className="fixed bottom-32 right-4 z-20">
+        <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-3 py-2 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200 cursor-pointer group">
+          <div className="flex items-center space-x-2">
+            <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
+              <span className="text-purple-600 font-bold text-xs">⚡</span>
+            </div>
+            <div className="text-xs font-semibold">
+              <div className="leading-tight">Built with</div>
+              <div className="leading-tight text-yellow-300">Bolt</div>
+            </div>
+          </div>
+          <div className="absolute -top-1 -right-1 w-3 h-3 bg-yellow-400 rounded-full animate-pulse"></div>
+        </div>
+      </div>
+
       {/* Chatbot Button */}
       <button className="fixed bottom-20 right-4 bg-yellow-300 w-12 h-12 rounded-full shadow-lg flex items-center justify-center cursor-pointer z-10 hover:bg-yellow-400 hover:scale-110 transition-all duration-200">
         <MessageCircle className="w-6 h-6 text-teal-700" />
